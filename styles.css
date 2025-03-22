@@ -1,66 +1,320 @@
-*{
-    margin: 2%;
-    /* border: 1px solid blue; */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
 }
 
-#topBar{
-    background-color: #353535;
-}
-
-#topBar h1{
-    margin-left: 50%;
-    font-size: 6vw;
-    color: #d4e09b;
-    padding: 5px 0;
-}
-
-#middleBar{
-    background-color: #ffff;
-    margin-left: 62%;
-    font-size: 5vw;
-}
-
-#underline{
-    border-bottom: 2px dotted black;
+#header {
+    background-color: #523f32;
+    color: #fff;
+    padding: .1vw 3vw;
+    border-bottom: .1vw solid #b90000;
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 
-#mainSection{
+/* Navigation Bar */
+#topNav {
+    background-color: #1e2224;
+    color: #fff;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6vw;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#topNav img {
+    margin-left: 5vw;
+}
+
+#topNav ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-left: 15vw;
+}
+
+#topNav li {
+    padding: 0 2vw;
+}
+
+#topNav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#topNavButton {
+    display: flex;
     justify-content: center;
-    margin: 0 100px;
+    align-items: center;
+    border: .1vw solid #b90000;
+    height: 4vw;
+    width: 15vw;
+    font-size: 1.6vw;
+    margin-right: 5vw;
+}
+
+#topNav #topNavButton {
+    color: #90909087;
 }
 
 
-.boxArea{
+/* Section One */
+
+#sectionOne {
+    box-shadow: inset 0 0 0 1000px #00000047;
+    background-image: url("img/baguetteSandies.png");
+    background-repeat: no-repeat;
+    background-size: 140%;
+    height: 80vw;
+    width: 90vw;
+    margin: -1vw 0vw;
+    margin: 2vw 5vw;
+    border: none;
+    border-radius: 1vw;
+    /* Text */
     display: flex;
     flex-direction: column;
+    color: #fff;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    background-color: #52796f;
-    border-radius: 10px;
+    justify-content: start;
+    margin-bottom: 5vw;
+}
+
+#sectionOne h1 {
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 10vw;
+}
+
+#sectionOne p {
+    font-size: 3vh;
+    text-align: center;
+    margin-top: -4vh;
+}
+
+#sectionOne button {
+    background-color: #fff;
+    border: .1vw solid #b90000;
+    height: 7vh;
+    width: 25vh;
+    font-size: 1.5vw;
+    margin: 1vw;
+}
+
+#sectionOne a {
+    text-decoration: none;
+    color: #717171;
 }
 
 
-.cardPhoto{
+/* Section Two */
+
+#sectionTwo {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin: 2vw 15vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#sectionTwoLeft {
+    width: 45%;
+    margin-right: 10vw;
+}
+
+#sectionTwoLeft img {
+    width: 30vw;
+    height: auto;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 6vw;
+}
+
+
+#sectionTwoRight {
+    width: 45%;
+    height: 40rem;
+}
+
+#sectionTwoRight div:nth-child(1) {
+    color: #b90000;
+    font-size: 1.4rem;
+    margin-bottom: 2vw;
+}
+
+#sectionTwoRight div:nth-child(2) {
+    color: #02161c;
+    font-size: 3rem;
+    padding-bottom: 2vw;
+    border-bottom: .1vw solid #b90000;
+
+}
+
+#sectionTwoRight div:nth-child(3) {
+    color: #02161c;
+    font-size: 1.2rem;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-bottom: .1vw solid #b90000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #515151;
+}
+
+#sectionTwoRight a {
+    margin-top: 4vw;
+    background-color: #fff;
+    border: .1vw solid #a00000;
+    height: 8vh;
+    width: 25vh;
+    font-size: 1.8vw;
+    margin: 1vw;
+    text-decoration: none;
+    color: #717171;
+    padding: 1vw;
+}
+
+#sectionTwoRight div:nth-child(4) {
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+
+
+/* Section Three */
+
+#sectionThree {
     display: flex;
     flex-wrap: wrap;
-    width: 94%;
-    height: 90%;
-    border: 10px solid #415a77;
-    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+#sectionThree img {
+    width: 25%;
+}
+
+#sectionThree div {
+    width: 23vw;
+    height: 30vw;
+    border: none;
+    border-radius: 1vw;
+}
+
+#sectionThree div:nth-child(1) {
+    background-image: url("img/chickenPic.png");
+    background-position: top;
+    background-size: cover;
+}
+
+#sectionThree div:nth-child(2) {
+    background-image: url("img/breadPic.png");
+    background-position: top;
+    background-size: cover;
+}
+
+#sectionThree div:nth-child(3) {
+    background-image: url("img/cookiePic.png");
+    background-position: top;
+    background-size: cover;
+}
+
+#sectionThree div:nth-child(4) {
+    background-image: url("img/coffeePic.png");
+    background-position: top;
+    background-size: cover;
 }
 
 
-.lowerBox{
-    font-size: 4vw;
-    border: none;
-    border-radius: 20px;
-    background-color:#415a77;
-    padding: 10px;
-    
+/* Footer */
+
+#footer {
+    background-color: #1e2224;
+    margin-top: 2vw;
+}
+
+#footerTop {
+    display: flex;
+    padding: 3vw 0;
+    margin: 0 3vw;
+}
+
+#footerTop div {
+    margin: 0 .5vw;
+    font-size: 1.2rem;
+    color: #a6a6a6;
+}
+
+#footerDivider {
+    border-bottom: .1vw solid #b90000;
+    margin: 0 1vw;
+}
+
+#footerTop div:nth-child(6) {
+    margin-left: 55vw;
+}
+
+.privacyTerms a {
+    color: #a6a6a6;
+    text-decoration: none;
+}
+
+#footerBottom {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5vw 0;
+}
+
+#footerBottom div:nth-child(1) {
+    margin-right: 40vw;
+    color: #fff;
+}
+
+#footerBottom span {
+    color: #b90000;
+}
+
+#footerBottom div:nth-child(2) {
+    margin-right: 4vw;
+    color: #a6a6a6;
+}
+
+
+@media (max-width: 975px) {
+    #sectionTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionTwoLeft img {
+        width: 30vh;
+        height: auto;
+        border: none;
+        border-radius: 1vw;
+        margin-top: 8vw;
+    }
+
+    #sectionTwoRight {
+        width: 80%;
+        height: 40rem;
+        margin-top: 5vw;
+        margin-bottom: -20vw;
+    }
+}
+
+@media (max-width: 550px) {
+    #sectionTwoRight {
+        width: 100%;
+        height: 40rem;
+        margin-top: 5vw;
+        margin-bottom: -20vw;
+    }
 }
