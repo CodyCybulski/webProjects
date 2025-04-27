@@ -4,115 +4,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Web Projects</title>
-</head>
+    <title>Cody Cybulski Portfolio</title>
 
-<body>
 
-    <div id="topBar">
-        <h1>Cody Cybulski</h1>
+    <body class="overflow-hidden">
+
+        <header class="bg-gray-800 text-white relative flex flex-col mb-3">
+            <!--vertical rectangles -->
+            <div>
+                <div class="absolute top-0 left-0 w-full flex justify-evenly bg-neutral-400 h-26 rounded-b-xl">
+                    <!-- Left line -->
+                    <div class="absolute left-14 h-full w-[.2rem] bg-neutral-500"></div>
+
+                    <!-- Right line -->
+                    <div class="absolute right-14 h-full w-[.2rem] bg-neutral-500"></div>
+
+                    <!-- Bottom line -->
+                    <div class="absolute bottom-10 w-[100%] h-[.2rem] bg-neutral-500"></div>
+
+                    <!-- Bar Container -->
+                    <div class="flex justify-evenly w-[90%]">
+
+                        <!-- Bars here -->
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                        <div class="h-10 w-5 bg-gradient-to-b from-neutral-500 via-neutral-500 to-neutral-700"></div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Wrapper to Center Vertically -->
+        <div class="flex justify-center items-center h-screen w-full">
+            <div class="w-[85%] max-w-[1200px] relative mx-auto flex justify-center pb-6">
+
+                <div class="relative flex justify-center items-center w-screen h-screen">
+                    <div class="swiper my-3d-carousel">
+                        <div class="swiper-wrapper">
+
+                            <!-- Card 1 - With Modal -->
+                            <div class="swiper-slide">
+                                <button class="open-modal" data-modal="modal-player1">
+                                    <div
+                                        class="relative w-64 h-82 bg-neutral-800 rounded-3xl shadow-lg p-4 border-4 border-neutral-400">
+                                        <h3 class="text-center text-red-500 text-5xl mb-2">Player 1</h3>
+                                        <img src="img/controller.png" alt="Image 1" class="w-full h-48 object-cover rotate-340">
+                                        <div
+                                            class="text-center text-justify text-xl text-red-500 text-sm mt-2 relative flex items-center justify-between rounded-xl bg-stone-950 h-10 px-4">
+                                            <p>Profile</p>
+                                            <p class="text-white rounded-xl bg-neutral-500 text-center w-25">1998</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!-- Card 2 - With Modal -->
+                            <div class="swiper-slide">
+                                <button class="open-modal" data-modal="modal-collection">
+                                    <div
+                                        class="relative w-64 h-82 bg-neutral-800 rounded-3xl shadow-lg p-4 border-4 border-neutral-400">
+                                        <h3 class="text-center text-red-500 text-5xl mb-2">Collection</h3>
+                                        <img src="img/arcade Machine.png" alt="Image 2"
+                                            class="w-full h-48 object-cover">
+                                        <div
+                                            class="text-center text-justify text-xl text-red-500 text-sm mt-2 relative flex items-center justify-between rounded-xl bg-stone-950 h-10 px-4">
+                                            <p>Gallery</p>
+                                            <p class="text-white rounded-xl bg-neutral-500 text-center w-25">2025</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!-- Card 3 - With Modal -->
+                            <div class="swiper-slide">
+                                <button class="open-modal" data-modal="modal-faq">
+                                    <div
+                                        class="relative w-64 h-82 bg-neutral-800 rounded-3xl shadow-lg p-4 border-4 border-neutral-400">
+                                        <h3 class="text-center text-red-500 text-5xl mb-2">Cody's Corner</h3>
+                                        <img src="img/cartridge.png" alt="Image 2"
+                                            class="w-36 h-36 object-cover ml-10">
+                                        <div
+                                            class="text-center text-justify text-large text-red-500 text-sm mt-2 relative flex items-center justify-between rounded-xl bg-stone-950 h-10 px-4">
+                                            <p>Fun Facts</p>
+                                            <p class="text-white rounded-xl bg-neutral-500 text-center w-25">2025</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!-- Card 2 - With Modal -->
+                            <div class="swiper-slide">
+                                <button class="open-modal" data-modal="modal-collection">
+                                    <div
+                                        class="relative w-64 h-82 bg-neutral-800 rounded-3xl shadow-lg p-4 border-4 border-neutral-400">
+                                        <h3 class="text-center text-red-500 text-5xl mb-2">Collection</h3>
+                                        <img src="img/arcade_machine.png" alt="Image 2"
+                                            class="w-full h-48 object-cover">
+
+                                        <!-- Gallery & Year Section -->
+                                        <div
+                                            class="text-center text-justify text-xl text-red-500 text-sm mt-2 relative flex items-center justify-between rounded-xl bg-stone-950 h-10 px-4">
+                                            <p>Gallery</p>
+                                            <p class="text-white rounded-xl bg-neutral-500 text-center w-25">2025</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="swiper-slide">
+                                <button class="open-modal" data-modal="modal-player5">
+                                    <div
+                                        class="relative w-64 h-82 bg-neutral-800 rounded-3xl shadow-lg p-4 border-4 border-neutral-400">
+                                        <h3 class="text-center text-red-500 text-5xl mb-2">Ping</h3>
+                                        <img src="img/wifi.png" alt="Image 1"
+                                            class="w-full h-48 object-cover rotate-340">
+
+                                        <!-- Profile & Year Section -->
+                                        <div
+                                            class="text-center text-justify text-xl text-red-500 text-sm mt-2 relative flex items-center justify-between rounded-xl bg-stone-950 h-10 px-4">
+                                            <p>Contact</p>
+                                            <p class="text-white rounded-xl bg-neutral-500 text-center w-25">1983</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!-- Add more cards as needed -->
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 1 Modal - PLAYER 1 -->
+        <div id="modal-player1"
+            class="modal hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+            <div class="bg-neutral-900 text-white p-6 rounded-lg relative w-220">
+                <!-- Close Button -->
+                <button
+                    class="close-modal absolute top-2 right-2 text-red-600 text-3xl cursor-pointer glow-red">✖</button>
+
+                <!-- Title -->
+                <h2 class="text-4xl mb-2 text-center">Player 1 Info</h2>
+                <div class="w-full h-[2px] bg-gray-500 mb-4"></div>
+
+                <!-- Content -->
+                <div class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 mb-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quae magnam error sunt, corporis, eius placeat tenetur mollitia ratione quo qui sequi quia facilis dolor fugit eum dignissimos, non consequuntur obcaecati. Voluptate consequatur modi aliquam aperiam atque! Provident ad nisi fuga quo. Quae similique ex aliquam numquam expedita consectetur tenetur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci cum quo reprehenderit distinctio ex labore architecto quibusdam cupiditate consequuntur temporibus quos, nulla harum voluptatibus qui quisquam quam aperiam iure cumque? Iure, aut! Magni rem impedit odio, voluptates pariatur quisquam perferendis! Velit quidem dolores incidunt debitis aliquam aliquid odit? Sapiente, repudiandae.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Card 2 Modal - COLLECTION -->
+        <div id="modal-collection"
+            class="modal hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+            <div class="bg-neutral-900 text-white p-6 rounded-lg relative w-[90%] max-w-4xl">
+                <!-- Close Button -->
+                <button
+                    class="close-modal absolute top-2 right-2 text-red-600 text-3xl cursor-pointer glow-red">✖</button>
+
+                <!-- Title Section -->
+                <h2 class="text-4xl mb-2 text-center">Web Development Projects</h2>
+                <div class="w-full h-[2px] bg-gray-500 mb-4"></div>
+
+                <!-- Gallery Section -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    <!-- Project 1 -->
+                    <div
+                        class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 hover:border-red-500 transition duration-300">
+                        <a href="Filler"><img src="img/examplePhoto.png" alt="Project 1"
+                            class="w-full h-40 object-cover rounded-md mb-2"></a>
+                        <h3 class="text-xl mb-1">Project 1</h3>
+                        <p class="text-sm text-gray-400">A brief description of Project 1.</p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 hover:border-red-500 transition duration-300">
+                        <a href="Filler"><img src="img/examplePhoto.png" alt="Project 2"
+                            class="w-full h-40 object-cover rounded-md mb-2"></a>
+                        <h3 class="text-xl mb-1">Project 2</h3>
+                        <p class="text-sm text-gray-400">A brief description of Project 2.</p>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 hover:border-red-500 transition duration-300">
+                        <a href="Filler"><img src="img/examplePhoto.png" alt="Project 3"
+                            class="w-full h-40 object-cover rounded-md mb-2"></a>
+                        <h3 class="text-xl mb-1">Project 3</h3>
+                        <p class="text-sm text-gray-400">A brief description of Project 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card 3 modal - FAQ -->
+
+        <div id="modal-faq" class="modal hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+            <div class="bg-neutral-900 text-white p-6 rounded-lg relative w-96">
+                <!-- Close Button -->
+                <button class="close-modal absolute top-2 right-2 text-red-600 text-3xl cursor-pointer glow-red">✖</button>
+        
+                <!-- Title Section -->
+                <h2 class="text-4xl mb-2 text-center">Fun Facts</h2>
+                <div class="w-full h-[2px] bg-gray-500 mb-4"></div>
+        
+                <!-- Section 1 -->
+                <div class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 mb-4">
+                    <h3 class="text-2xl mb-2">Question One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iure quos amet modi nemo voluptas.</p>
+                </div>
+        
+                <!-- Section 2 -->
+                <div class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 mb-4">
+                    <h3 class="text-2xl mb-2">Question Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iure quos amet modi nemo voluptas.</p>
+                </div>
+        
+                <!-- Section 3 -->
+                <div class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600">
+                    <h3 class="text-2xl mb-2">Question Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iure quos amet modi nemo voluptas.</p>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+                    <!-- Card 5 Modal - PING -->
+<div id="modal-player5" class="modal hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+    <div class="bg-neutral-900 text-white p-6 rounded-lg relative w-96">
+        <!-- Close Button -->
+        <button class="close-modal absolute top-2 right-2 text-red-600 text-3xl cursor-pointer glow-red">✖</button>
+
+        <!-- Title Section -->
+        <h2 class="text-4xl mb-2 text-center">Contact Me</h2>
+        <div class="w-full h-[2px] bg-gray-500 mb-4"></div>
+
+        <!-- Section 1 -->
+        <div class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 mb-4">
+            <h3 class="text-2xl mb-2">Email:</h3>
+            <p>codycybulski@gmail.com</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600 mb-4">
+            <h3 class="text-2xl mb-2">LinkedIn:</h3>
+            <p>Details Here</p>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="bg-neutral-800 p-4 rounded-lg border-4 border-gray-600">
+            <h3 class="text-2xl mb-2">GitHub:</h3>
+            <p>https://github.com/CodyCybulski</p>
+        </div>
     </div>
-    <div id="middleBar">Web Projects</div>
-
-    <div id="underline"></div>
-
-    <div id="mainSection">
-
-        <div class="boxArea">
-            <a href="https://batpickle.github.io/staticPage1/"><img src="staticPage1.png" alt="static page 1"
-                    class="cardPhoto"></a>
-            <div class="lowerBox">Static Page Practice</div>
-        </div>
-
-
-        <div class="boxArea">
-            <a href="https://batpickle.github.io/thepolishprinter/"><img src="tppPage.png" alt="ThePolishPrinter Page"
-                    class="cardPhoto"></a>
-            <div class="lowerBox">ThePolishPrinter Page</div>
-        </div>
-
-
-        <div class="boxArea">
-            <a href="https://batpickle.github.io/expenseTracker/"><img src="expenseTracker.png" alt="Expense Tracker"
-                    class="cardPhoto"></a>
-            <div class="lowerBox">Expense Tracker</div>
-        </div>
-
-
-        <div class="boxArea">
-            <a href="https://batpickle.github.io/EtchSketch/"><img src="etchSketch.png" alt="Etch a Sketch"
-                    class="cardPhoto"></a>
-            <div class="lowerBox">Etch a Sketch</div>
-        </div>
-
-
-        <div class="boxArea">
-            <a href="https://batpickle.github.io/Landing-Page---TOP/"><img src="topLandingPage.png"
-                    alt="TOP Landing Page" class="cardPhoto"></a>
-            <div class="lowerBox">TOP Landing Page</div>
-        </div>
-
-
-
-    <div class="boxArea">
-        <a href="https://batpickle.github.io/staticPage2/"><img src="staticPage2.png"
-                alt="Static Page 2" class="cardPhoto"></a>
-        <div class="lowerBox">Static Page 2</div>
-    </div>
-
-
-<div class="boxArea">
-    <a href="https://batpickle.github.io/calculator/"><img src="calculator.png"
-            alt="Calculator" class="cardPhoto"></a>
-    <div class="lowerBox">Calculator</div>
 </div>
 
 
-<div class="boxArea">
-    <a href="https://batpickle.github.io/janeStatic/"><img src="janeStatic.png"
-            alt="Calculator" class="cardPhoto"></a>
-    <div class="lowerBox">Jane Static Page</div>
-</div>
+                    <!-- Bottom Bar -->
+                    <footer
+                        <footer class="bg-neutral-400 text-white py-4 text-center w-full h-[100px] fixed bottom-0 left-0 flex items-center justify-between px-10 rounded-t-xl z-50">
 
+                        <!-- Left Side: Image & Name -->
+                        <div class="flex items-center">
+                            <img src="img/snesLogo.png" alt="Profile Image" class="h-22 w-28 rounded-full ml-10">
+                            <div id="footerName" class="ml-3 text-5xl text-red-500 italic cursor-pointer duration-300">
+                                Cody
+                                Cybulski</div>
+                        </div>
 
-<div class="boxArea">
-    <a href="https://batpickle.github.io/bootstrapExercise/"><img src="bootstrap.png"
-            alt="Calculator" class="cardPhoto"></a>
-    <div class="lowerBox">Bootstrap Webpage 1</div>
-</div>
+                        <!-- Vertical Line on Left (Indented Inward) -->
+                        <div class="absolute left-14 h-full w-[.2rem] bg-neutral-500"></div>
 
+                        <!-- Vertical Line on Right (Indented Inward) -->
+                        <div class="absolute right-14 h-full w-[.2rem] bg-neutral-500"></div>
 
-<div class="boxArea">
-    <a href="https://batpickle.github.io/pizzaTransitPage/"><img src="pizzaTransit.png"
-            alt="Pizza Transit" class="cardPhoto"></a>
-    <div class="lowerBox">Pizza Transit</div>
-</div>
+                        <!-- Right Side: Power Light -->
+                        <div class="power-light-wrapper mr-10">
+                            <div class="power-light"></div>
+                        </div>
+                    </footer>
 
-
-<div class="boxArea">
-    <a href="https://batpickle.github.io/nitroZone/"><img src="nitroZone.png"
-            alt="Nitro Zone" class="cardPhoto"></a>
-    <div class="lowerBox">Nitro Zone</div>
-</div>
-
-
-<div class="boxArea">
-    <a href="https://batpickle.github.io/baguette/"><img src="Baguette.png"
-            alt="Baguette De France" class="cardPhoto"></a>
-    <div class="lowerBox">Baguette De France</div>
-</div>
-
-
-<div class="boxArea">
-    <a href="https://batpickle.github.io/HFFDTailwind/"><img src="hffdTailwind.png"
-            alt="HFFD Tailwind" class="cardPhoto"></a>
-    <div class="lowerBox">HFFD Tailwind</div>
-</div>
-
-
-    <script src="script.js"></script>
-</body>
+                    <script src="script.js"></script>
+    </body>
 
 </html>

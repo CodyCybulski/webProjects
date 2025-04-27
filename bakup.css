@@ -1,0 +1,49 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+#footerName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+    background-image: url('img/portfolioBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+/* Flickering Power Light */
+@keyframes strongFlicker {
+    0% { opacity: 1; }
+    10% { opacity: 0.3; }
+    20% { opacity: 0.8; }
+    30% { opacity: 0.2; }
+    40% { opacity: 1; }
+    50% { opacity: 0.5; }
+    60% { opacity: 1; }
+    70% { opacity: 0.3; }
+    80% { opacity: 0.9; }
+    90% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.power-light-wrapper {
+    width: 100px;
+    height: 20px;
+    background-color: transparent;
+    border: 3px solid rgb(100, 100, 100); /* Solid border */
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.power-light {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 50px;
+    animation: strongFlicker 1s infinite ease-in-out;
+}
